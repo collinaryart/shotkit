@@ -1,0 +1,34 @@
+{
+  "_doc": "Show folder template. Keys are folder names; '{seq}' and '{shot}' expand per sequence/shot passed to scaffold. An empty object is a leaf folder.",
+  "assets": {
+    "char": {},
+    "prop": {},
+    "env": {},
+    "veh": {}
+  },
+  "shots": {
+    "{seq}": {
+      "{shot}": {
+        "plates": {},
+        "work": {
+          "layout": {},
+          "anim": {},
+          "fx": {},
+          "lighting": {},
+          "comp": {}
+        },
+        "publish": {},
+        "renders": {},
+        "review": {}
+      }
+    }
+  },
+  "editorial": {
+    "cuts": {},
+    "refs": {}
+  },
+  "pipeline": {
+    "config": {},
+    "logs": {}
+  }
+}
