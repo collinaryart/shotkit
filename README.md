@@ -37,7 +37,7 @@ prj_sq010_sh0020_lighting_v004.1001.exr
 Lowercase, underscores, three-digit versions, a known task name (`naming.TASKS`). The regex lives in
 one module; every other tool imports it, so a convention change is one edit.
 
-## Design choices worth knowing
+## Design choices
 
 * **The name is the source of truth.** `publish` reads show/seq/shot/task/version from the file name
   and refuses a name that breaks the convention, so the publish path can never disagree with the file.
@@ -71,10 +71,3 @@ shotkit/
   templates/show_tree.json
 tests/            pytest, one file per module, plus an end-to-end CLI round trip
 ```
-
-## Status
-
-0.1.0, October 2026. Built with Claude Code to Collin Han's brief as a learning project while applying
-for pipeline roles: the tool choice, the reading, the running and the maintenance are his, the first
-pass of the code was AI-assisted, and every module is covered by the tests in `tests/`.
-Issues and pull requests welcome.
