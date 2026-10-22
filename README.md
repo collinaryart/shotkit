@@ -1,4 +1,4 @@
-# shotkit
+# Shotkit
 
 A small CG-pipeline toolkit in plain Python (3.9+, no dependencies). It does the five small jobs a
 pipeline TD gets asked for most often, each as a library module and a `shotkit` sub-command:
@@ -26,7 +26,7 @@ shotkit doctor
 
 Inside Maya, add the repo to `sys.path` (or `PYTHONPATH`) and import `shotkit.maya_check`.
 
-## The convention
+## Convention
 
 ```
 <show>_<seq>_<shot>_<task>_v<###>[.<frame>][.<ext>]
@@ -37,7 +37,7 @@ prj_sq010_sh0020_lighting_v004.1001.exr
 Lowercase, underscores, three-digit versions, a known task name (`naming.TASKS`). The regex lives in
 one module; every other tool imports it, so a convention change is one edit.
 
-## Design choices
+## Design Choices
 
 * **The name is the source of truth.** `publish` reads show/seq/shot/task/version from the file name
   and refuses a name that breaks the convention, so the publish path can never disagree with the file.
